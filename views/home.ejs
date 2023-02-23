@@ -1,0 +1,18 @@
+<%- include("partials/header") -%>
+
+<h1 class="font-headings">Welcome to Daily Journal! <br>Start creating your posts today by clicking on compose...</h1>
+
+<!-- <p class="font-para"> Start creating your posts today by clicking on compose...</p> -->
+
+
+  <% posts.forEach(function(post){ %>
+    <div class="post-div">
+      <h1 class="font-headings-post"><%= post.title %></h1>
+      <p class="font-para"><%= post.shortContent %> <a href="/posts/<%=post._id%>">Read More</a></p>
+    </div>
+    
+  <% }); %>
+
+
+
+
